@@ -1,0 +1,13 @@
+@import url("components/fixbar.css");
+@import url("components/footer.css");
+@import url("components/hexagon.css");
+
+.box {
+  padding: 1% 1%;
+  margin: 1% 0%;
+  width: 100%;
+  /*box-shadow: 0px 0px 100px rgba(0,0,0, 1.0);*/
+  background-color: rgba(40,40,40, 0.7);
+  color: #ccc;
+}
+

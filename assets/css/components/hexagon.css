@@ -1,0 +1,54 @@
+/*footer hexagon*/
+
+#footer li {
+  display: inline-block;
+  /*letter-spacing: 20px;*/
+  /*margin: 10px 10px;*/
+}
+
+#footer i {
+  word-spacing: 2.5em;
+  font-size: 1.2em;
+  z-index: 1;
+}
+
+#footer li:hover {
+  background-color: rgba(104, 223, 240, 1);
+}
+
+#footer li {
+  position: relative;
+  width: 60px;
+  height: 34.64px;
+  background-color: transparent;
+  transition: color 1s ease;
+  margin: 17.32px 0;
+  border-left: solid 5px white;
+  border-right: solid 5px white;
+}
+
+#footer li:before,
+#footer li:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 42.43px;
+  height: 42.43px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 3.7868px;
+}
+
+#footer li:before {
+  top: -21.2132px;
+  border-top: solid 7.0711px white;
+  border-right: solid 7.0711px white;
+}
+
+#footer li:after {
+  bottom: -21.2132px;
+  border-bottom: solid 7.0711px white;
+  border-left: solid 7.0711px white;
+}
