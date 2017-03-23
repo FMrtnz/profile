@@ -11,3 +11,41 @@
   color: #ccc;
 }
 
+.box h2 {
+  margin-left: 1%;
+}
+
+.box i {
+  margin-right: 1%;
+}
+
+#experience img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+#experience article {
+  margin: 3% 2%;
+}
+
+#experience h3 {
+  margin-top: 0%;
+}
+
+#experience a {
+  color: #ccc;
+  font-size: 1.2em;
+  text-decoration: none;
+  /*width: 1%;*/
+}
+
+#experience a:hover {
+  color: rgba(104, 223, 240, 0.7);
+  font-size: 1.3em;
+}
+
+.details {
+  /*visibility: hidden;*/
+  /*bottom: 0px;*/
+  display: none;
+}
