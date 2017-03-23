@@ -6,8 +6,9 @@
 
 #footer a {
   color: #ccc;
-  font-size: 2em;
+  /*font-size: 2em;*/
   text-decoration: none;
+  /*width: 1%;*/
 }
 
 #footer ul {
