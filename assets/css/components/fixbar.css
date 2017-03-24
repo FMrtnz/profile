@@ -5,7 +5,7 @@
   top: 0px;
   left: 0px;
   bottom: 0px;
-  z-index: 1;
+  z-index: 1030;
   /*font-size: 12px;*/
 }
 
@@ -79,10 +79,18 @@
   /*z-index: 1;*/
 }
 
-#hamburger {
-  font-size: 100%;
-}
-
 #close span {
   font-size: 2.5em;
+}
+
+#hamburger {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ccc;
+  font-size: 2.5em;
+  transition: all 0.3s ease;
+}
+
+#margin-fixbar {
+  margin-bottom: 12%;
 }
