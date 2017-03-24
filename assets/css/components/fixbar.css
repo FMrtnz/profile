@@ -70,8 +70,17 @@
   /*transition: all 0.3s ease;*/
 }
 
-#hamburger:active {
-  visibility:visible;
+/*button for responsive side-bar*/
+#hamb-bar {
+  background-color: rgba(40,40,40, 1);
+  /*background-size: 100%;*/
+  background-padding: 100%;
+  /*position: fixed;*/
+  /*z-index: 1;*/
+}
+
+#hamburger {
+  font-size: 100%;
 }
 
 #close span {

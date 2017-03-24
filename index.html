@@ -9,10 +9,12 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="container">
-      <div class="visible-xs visible-sm hidden-md">
-        <button id="hamburger"><span class="fa fa-bars"></span></button>
+    <nav id="hamb-bar" class="navbar navbar-default navbar-fixed-top visible-xs visible-sm hidden-md no-padding text-left">
+      <div class="container">
+        <button id="hamburger" role="presentation"><span class="fa fa-bars"></span></button>
       </div>
+    </nav>
+    <div class="container">
       <div class="row">
         <div id="navigation" class="col-xs-8 hidden-xs hidden-sm col-md-2 text-right">
           <a id="close" class="hidden col-xs-12"><span class="fa fa-times"></span></a>
@@ -22,7 +24,6 @@
               <h2 id="title">Fabien Martinez</h2>
             </div>
           </div>
-
           <div id="nav" class="col-xs-12 no-padding text-center">
             <ul class='menu'>
               <!-- <li><a href="#top" id="top-link"><i class="fa fa-home"></i><span>Intro</span></a></li> -->
