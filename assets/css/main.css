@@ -6,7 +6,8 @@
 @import url("components/hexagons.min.css");
 
 * {
-  font-size: 1.04em;
+  /*font-size: 1.04em;*/
+  font-size: 19px;
 }
 
 a {

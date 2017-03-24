@@ -36,20 +36,19 @@
   margin-top: 0%;
 }
 
-
-#experience a:hover {
-  color: rgba(104, 223, 240, 0.7);
-  font-size: 1.3em;
-}
-
-.details {
+.details a {
   /*visibility: hidden;*/
   /*bottom: 0px;*/
-  display: none;
+/*  display: none;*/
+  line-height: 3em;
 }
 
+#experience a {
+  text-decoration: none;
+  color: rgba(255 , 255, 255, 1);
+}
 
-
-#IE a:hover {
-
+#experience a:hover {
+  /*display: block;*/
+  color: rgba(255 , 255, 255, 0.8);
 }

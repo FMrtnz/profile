@@ -72,7 +72,7 @@
 
 /*button for responsive side-bar*/
 #hamb-bar {
-  background-color: rgba(40,40,40, 1);
+  background-color: rgba(40,40,40, 0.9);
   /*background-size: 100%;*/
   background-padding: 100%;
   /*position: fixed;*/
