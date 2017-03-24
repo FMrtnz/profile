@@ -1,51 +1,22 @@
 @import url("components/fixbar.css");
 @import url("components/footer.css");
 @import url("components/hexagon.css");
+@import url("components/box.css");
 
-.box {
-  padding: 1% 1%;
-  margin: 1% 0%;
-  width: 100%;
-  /*box-shadow: 0px 0px 100px rgba(0,0,0, 1.0);*/
-  background-color: rgba(40,40,40, 0.7);
+* {
+  font-size: 1.04em;
+}
+
+a {
   color: #ccc;
-}
-
-.box h2 {
-  margin-left: 1%;
-}
-
-.box i {
-  margin-right: 1%;
-}
-
-#experience img {
-  width: 100%;
-  border-radius: 100%;
-}
-
-#experience article {
-  margin: 3% 2%;
-}
-
-#experience h3 {
-  margin-top: 0%;
-}
-
-#experience a {
-  color: #ccc;
-  font-size: 1.2em;
+  /*font-size: 1.2em;*/
   text-decoration: none;
   /*width: 1%;*/
 }
 
-#experience a:hover {
-  color: rgba(104, 223, 240, 0.7);
-  font-size: 1.3em;
-}
-
-.details {
-  /*visibility: hidden;*/
-  /*bottom: 0px;*/
-  display: none;
+.no-padding {
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-right: 0%;
+  padding-left: 0%;
 }

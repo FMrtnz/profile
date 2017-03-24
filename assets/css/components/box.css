@@ -1,0 +1,49 @@
+
+.box {
+  padding: 1% 1%;
+  margin: 1% 0%;
+  width: 100%;
+  /*box-shadow: 0px 0px 100px rgba(0,0,0, 1.0);*/
+  background-color: rgba(40,40,40, 0.7);
+  color: #ccc;
+}
+
+.box h2 {
+  margin-left: 1%;
+}
+
+.box i {
+  margin-right: 1%;
+}
+
+/*experience container*/
+
+#experience img {
+  width: 70%;
+  border-radius: 100%;
+}
+
+.no-padding {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#experience article {
+  margin: 3% 2%;
+}
+
+#experience h3 {
+  margin-top: 0%;
+}
+
+
+#experience a:hover {
+  color: rgba(104, 223, 240, 0.7);
+  font-size: 1.3em;
+}
+
+.details {
+  /*visibility: hidden;*/
+  /*bottom: 0px;*/
+  display: none;
+}

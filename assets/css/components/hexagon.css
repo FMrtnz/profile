@@ -8,7 +8,7 @@
 
 #footer i {
   /*word-spacing: 5%;*/
-  font-size: 2.5em;
+  font-size: 2.12em;
   /*z-index: 1;*/
 }
 
@@ -33,7 +33,7 @@
 #footer li:after {
   content: "";
   position: absolute;
-  z-index: 1;
+  /*z-index: 1;*/
   width: 42.43px;
   height: 42.43px;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
