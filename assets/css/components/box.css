@@ -25,6 +25,7 @@
 #experience img {
   width: 100%;
   border-radius: 100%;
+  /*border: solid 1px black;*/
 }
 
 /*.no-padding {
