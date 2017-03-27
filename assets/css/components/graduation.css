@@ -1,0 +1,38 @@
+/*graduation container*/
+
+#graduation img {
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+  /*border: solid 1px black;*/
+}
+
+/*.no-padding {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+*/
+#graduation article {
+  margin: 3% 2%;
+}
+
+#graduation h3 {
+  margin-top: 0%;
+}
+
+.details a {
+  /*visibility: hidden;*/
+  /*bottom: 0px;*/
+/*  display: none;*/
+  line-height: 3em;
+}
+
+#graduation a {
+  text-decoration: none;
+  color: rgba(120 , 120, 120, 0.8);
+}
+
+#graduation a:hover {
+  /*display: block;*/
+  color: rgba(120 , 120, 120, 1);
+}
