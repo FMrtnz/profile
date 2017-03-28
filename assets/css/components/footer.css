@@ -1,7 +1,7 @@
 #footer {
   background-color: #333333;
   /*width: 100%;*/
-  /*padding: 1%;*/
+  padding: 1%;
   color: #ccc;
 }
 
@@ -13,32 +13,37 @@
 
 #footer ul {
   /*float: center;*/
-  margin: 0px;
+  /*margin: 5%;*/
   padding: 0px;
+  word-spacing: 1.5em;
 }
 
-/*footer hexagon*/
 
 #footer li {
   display: inline-block;
   /*margin: 10px 10px;*/
 }
 
-#footer li {
-  word-spacing: 30%;
-  /*letter-spacing: 20%;*/
-  /*font-size: 2.12em;*/
-  /*z-index: 1;*/
-}
 
 #footer span {
   color: rgba(250, 250, 250, 0.4);
-  word-spacing: 30%;
-  font-size: 2.12em;
+  font-size: 2.5em;
 }
 
 #footer span:hover {
   color: rgba(250, 250, 250, 0.1);
+}
+
+#footer h2 {
+  margin-left: 1%;
+}
+
+#footer h2 > i {
+  font-size: 1.3em;
+}
+
+#footer i {
+  margin-right: 1%;
 }
 
 #footer i:hover {

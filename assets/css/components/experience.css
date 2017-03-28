@@ -1,9 +1,3 @@
-
-/*.no-padding {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-*/
 #experience article {
   margin: 3% 2%;
 }
@@ -13,9 +7,6 @@
 }
 
 .details a {
-  /*visibility: hidden;*/
-  /*bottom: 0px;*/
-/*  display: none;*/
   line-height: 3em;
 }
 
@@ -25,6 +16,5 @@
 }
 
 #experience a:hover {
-  /*display: block;*/
   color: rgba(120 , 120, 120, 1);
 }

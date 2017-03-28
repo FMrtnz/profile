@@ -4,8 +4,7 @@
 @import url("components/box.css");
 @import url("components/experience.css");
 @import url("components/graduation.css");
-@import url("components/hexagons.css");
-@import url("components/hexagons.min.css");
+@import url("components/barre.css");
 
 * {
   /*font-size: 1.04em;*/
