@@ -16,3 +16,22 @@
   margin: 0px;
   padding: 0px;
 }
+
+/*footer hexagon*/
+
+#footer li {
+  display: inline-block;
+  /*margin: 10px 10px;*/
+}
+
+#footer i {
+  word-spacing: 15%;
+  /*letter-spacing: 20%;*/
+  font-size: 2.12em;
+  /*z-index: 1;*/
+}
+
+#footer i:hover {
+  /*font-size: 2.1em;*/
+  color: rgba(104, 223, 240, 0.7);
+}

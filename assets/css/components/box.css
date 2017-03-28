@@ -18,3 +18,14 @@
 .box i {
   margin-right: 1%;
 }
+
+.box img {
+  width: 82%;
+  border-radius: 100%;
+  box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+  /*border: solid 1px black;*/
+}
+
+.date h4 {
+  font-size: 0.8em;
+}
