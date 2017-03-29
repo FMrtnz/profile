@@ -7,8 +7,7 @@
 @import url("components/barre.css");
 
 * {
-  /*font-size: 1.04em;*/
-  font-size: 19px;
+  font-size: 1.02em;
 }
 
 a {
