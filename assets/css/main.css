@@ -5,6 +5,7 @@
 @import url("components/experience.css");
 @import url("components/graduation.css");
 @import url("components/barre.css");
+@import url("components/form.css");
 
 * {
   font-size: 1.02em;
