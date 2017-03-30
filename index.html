@@ -298,34 +298,41 @@
             </article>
           </div>
         </div>
-        <!-- skills -->
-        <div id="skill" class="col-xs-12 col-md-10 col-md-offset-2 box">
-          <header>
-            <h2><i class="fa fa-cogs"></i>Compétences</h2>
-          </header>
-          <div class="row barres_skills">
-            <div class="col-xs-12 col-md-6">
-              <ul class="barres">
-                <li data-skills="75">HTML5<span style="width: 75%;"></span></li>
-                <li data-skills="55">CSS3<span style="width: 55%;"></span></li>
-                <li data-skills="55">Jquery<span style="width: 55%;"></span></li>
-                <li data-skills="70">Ruby<span style="width: 80%;"></span></li>
-                <li data-skills="60">Ruby on Rails<span style="width: 60%;"></span></li>
+      </div>
+      <!-- skills -->
+      <div id="skill" class="col-xs-12 col-md-10 col-md-offset-2 box">
+        <header>
+          <h2><i class="fa fa-cogs"></i>Compétences</h2>
+        </header>
+        <div class="row table-skills">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <h4><strong>Web developpement</strong></h4>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Jquery</li>
+                <li>Ruby</li>
+                <li>Ruby on Rails</li>
               </ul>
             </div>
-            <div class="col-xs-12 col-md-6">
-              <ul class="barres">
-                <li data-skills="50">Photoshop<span style="width: 50%;"></span></li>
-                <li data-skills="80">Microsoft Office<span style="width: 80%;"></span></li>
-                <li data-skills="75">Analyse<span style="width: 75%;"></span></li>
-                <li data-skills="65">Conscencieux<span style="width: 65%;"></span></li>
-                <li data-skills="60">Dynamique<span style="width: 60%;"></span></li>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <h4><strong>logiciels</strong></h4>
+              <ul>
+                <li>Microsoft Office</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <h4><strong>Langues</strong></h4>
+              <ul>
+                <li>Français</li>
+                <li>Anglais</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <!-- Contact -->
     </div>
   </div>
   <!-- Footer -->
@@ -333,11 +340,24 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-10 col-md-offset-2">
+          <!-- Contact -->
           <div id="contact">
             <header>
               <h2><i class="fa fa-envelope"></i>Contact</h2>
             </header>
             <div class="text-center">
+              <h3>Contactez-moi</h3>
+              <p>Remplissez le formulaire ci-dessous afin de m'envoyer un message. Je vous répondrais dans les plus bref délai.
+              <br><em>Tous les champs sont requis.</em></p>
+              <form novalidate="novalidate" method="post" action="#" name="contact" class="">
+                <input name="nom" placeholder="Nom - Prénom" class="required" type="text">
+                <input name="email" placeholder="Adresse email" class="required" type="email">
+                <p class=""><textarea name="message" placeholder="Votre message" class="required"></textarea></p>
+                <p class="">
+                  <input name="envoi" value="Envoyer le message" class="required" type="submit">
+                  <span class="messageform"></span>
+                </p>
+              </form>
               <!-- Social fas -->
               <ul class="fas">
                 <li>
@@ -356,7 +376,7 @@
                     </span>
                   </a>
                 </li>
-<!--                 <li>
+                <!--                 <li>
                   <a href="#" >
                     <span class="fa-stack fa-lg">
                       <i class="fa fa-circle fa-stack-2x"></i>
@@ -375,4 +395,5 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/exp-details.min.js"></script>
 <script type="text/javascript" src="assets/js/grad-details.min.js"></script>
+<script type="text/javascript" src="assets/js/validates.js"></script>
 </html>
