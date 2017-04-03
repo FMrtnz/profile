@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- Scripts -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -15,11 +17,11 @@
       <button id="hamburger" class="btn btn-default navbar-btn"><span class="fa fa-bars"></span></button>
     </nav>
     <!-- banner -->
-    <div class="banner col-md-offset-2" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.png');">
+    <div id="top" class="banner col-md-offset-2 section scrollspy" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.png');">
       <div class="banner-content">
-        <h1>Some Stuff</h1>
-        <p>Very cool stuff, useful and smart</p>
-        <a class="btn btn-primary btn-lg">GET IT</a>
+        <h1>Marketing, Communication et Web Développement</h1>
+        <p>Bienvenue sur ma page web</p>
+        <a href="#experience" class="btn btn-primary btn-lg">Découvrir mon profil</a>
       </div>
     </div>
     <div class="container">
@@ -34,7 +36,7 @@
           </div>
           <div id="nav" class="col-xs-12 no-padding text-center">
             <ul class='menu'>
-              <!-- <li><a href="#top" id="top-link"><i class="fa fa-home"></i><span>Intro</span></a></li> -->
+              <li><a href="#top" id="top-link"><i class="fa fa-home"></i><span>Intro</span></a></li>
               <li><a href="#experience" id="experience-link"><i class="fa fa-briefcase"></i><span>Expériences</span></a></li>
               <li><a href="#graduation" id="graduation-link"><i class="fa fa-graduation-cap"></i><span>Formations</span></a></li>
               <li><a href="#skill" id="skill-link"><i class="fa fa-cogs"></i><span>Compétences</span></a></li>
@@ -45,7 +47,7 @@
       </div>
       <div class="row">
         <!-- Works -->
-        <div id="experience" class="col-xs-12 col-md-10 col-md-offset-2 box">
+        <div id="experience" class="col-xs-12 col-md-10 col-md-offset-2 box section scrollspy">
           <header>
             <h2><i class="fa fa-briefcase"></i>Expériences</h2>
           </header>
@@ -171,7 +173,7 @@
           </div>
         </div>
         <!-- Graduation -->
-        <div id="graduation" class="col-xs-12 col-md-10 col-md-offset-2 box">
+        <div id="graduation" class="col-xs-12 col-md-10 col-md-offset-2 box section scrollspy">
           <header>
             <h2><i class="fa fa-graduation-cap"></i>Formations</h2>
           </header>
@@ -305,7 +307,7 @@
         </div>
       </div>
       <!-- skills -->
-      <div id="skill" class="col-xs-12 col-md-10 col-md-offset-2 box">
+      <div id="skill" class="col-xs-12 col-md-10 col-md-offset-2 box section scrollspy">
         <header>
           <h2><i class="fa fa-cogs"></i>Compétences</h2>
         </header>
@@ -320,8 +322,8 @@
                 <li>Javascript</li>
                 <li>Ruby</li>
                 <li>Ruby on Rails</li>
-                <li>Base de données relationnelles, SQL</li>
-                <li>Gestion de données type API, JSON, CSV</li>
+                <li>DB relationnelles, SQL</li>
+                <li>API, JSON, CSV</li>
                 <li>Orienté Objet, MVC</li>
               </ul>
             </div>
@@ -350,7 +352,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-10 col-md-offset-2">
           <!-- Contact -->
-          <div id="contact" class="row">
+          <div id="contact" class="row section scrollspy">
             <header>
               <h2><i class="fa fa-envelope"></i>Contact</h2>
             </header>
