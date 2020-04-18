@@ -1,0 +1,36 @@
+[{
+	"link": "https://www.lewagon.com/fr",
+	"img": "images/logo-le-wagon.png",
+	"school": "Le Wagon Aix-Marseille",
+	"grad": "Programme FullStack",
+	"date": "Jan 2017 - Mars 2017",
+	"more_details": "<p>9 semaines de formation intensive en développement web et acquisition de compétences en :</p><ul><li>Programmation en langue Ruby</li><li>Architecture de logiciels (type MVC)</li><li>Gestion de base de données & SQL</li><li>Web Design</li><li>Création de sites internet</li></ul>"
+},
+{
+	"link": "https://www.lewagon.com/fr",
+	"img": "images/logo-ms.png",
+	"school": "Maestris Sup Aix-en-Provence",
+	"grad": "Master Pro Marketing Communication",
+	"date": "2014 - 2016",
+	"more_details": "<p>Titre Certifié de Manager du Marketing et de la Communication Intégrée</p><p>Titre de Niveau 1 reconnu par l’état inscrit au RNCP</p><ul><li>Stratégie marketing et communication</li><li>Définition du business plan</li><li>Etudes de marché et études du comportement du consommateur</li><li>Mise en place d'un plan marketing et de d'un plan de communication</li><li>Audit financier</li><li>Management de projet</li></ul>"
+},
+{
+	"link": "http://www.univ-amu.fr/",
+	"img": "images/logo-amu.jpg",
+	"school": "AIX-MARSEILLE Université",
+	"grad": "Licence de psychologie",
+	"date": "2011 - 2013",
+	"more_details": "<ul><li>Psychologie Cognitive</li><li>Psychologie Clinique</li><li>Psychologie du Développement</li><li>Psychologie Social</li><li>Psychologie Différentiel</li><li>Neurologie</li></ul>"
+},
+{
+	"link": "http://cipe.univ-amu.fr/tice/c2i",
+	"img": "images/logo-amu.jpg",
+	"school": "AIX-MARSEILLE Université",
+	"grad": "Certificat informatique et internet (C2i) de niveau 1",
+	"date": "2012",
+	"more_details": ""
+},
+{
+	"grad": "Baccalauréat S spé mathétiques",
+	"date": "2011"
+}]
