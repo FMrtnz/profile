@@ -1,16 +1,20 @@
-[{
-	"Main": "Web developpement",
-	"skills":["Ruby & Ruby on Rails", "PHP", "Wordpress", "Prestashop"]
-},
 {
-	"Main": "Web design",
-	"skills":["HTML5","CSS3","Jquery","Javascript", "AMP"]
-},
-{
-	"Main": "Logiciels",
-	"skills":["Microsoft Office","Photoshop", "Illustrator", "Adobe Premiere"]
-},
-{
-	"Main": "Langues",
-	"skills":["Français","Anglais", "Espagnol", "Portugais", "Allemand"]
-}]
+	"skills":[
+		{
+			"main": "Web developpement",
+			"skills":["Ruby & Ruby on Rails", "PHP", "Wordpress", "Prestashop"]
+		},
+		{
+			"main": "Web design",
+			"skills":["HTML5","CSS3","Jquery","Javascript", "AMP"]
+		},
+		{
+			"main": "Logiciels",
+			"skills":["Microsoft Office","Photoshop", "Illustrator", "Adobe Premiere"]
+		},
+		{
+			"main": "Langues",
+			"skills":["Français","Anglais", "Espagnol", "Portugais", "Allemand"]
+		}
+	]
+}
