@@ -1,22 +1,23 @@
-[{
-	"link": "https://www.la-ligne-web.com/",
-	"img": "https://www.la-ligne-web.com/wp-content/uploads/2016/02/logo_llw.png",
-	"alt": "Logo La Ligne Web",
-	"enterprise": "La ligne Web",
-	"job": "Développeur web",
-	"date": "Sept. 2017 - en cours",
-	"location": "Aix-en-Provence, France",
-	"extract": "Je suis actuellement au poste de développeur junior à La Ligne Web, Agence Web à Aix en Provence.",
-	"more_details": "<p>Mes missions sont : </p><ul><li>Création de sites internets sous wordpress et Prestashop et déploiement</li><li>Maintenance de sites</li><li>Rédaction Web / Référencement</li><li>Création de manuel d'utilisations</li><li>Mise en place d'un questionnaire</li></ul>"
-},
 {
-	"link": "https://www.inextenso.fr/Accueil",
-	"img": "images/in_extenso_opt.png",
-	"alt": "Logo In Extenso",
-	"enterprise": "In Extenso",
-	"job": "Assistant communication",
-	"date": "Févr. 2016 - Juil. 2016",
-	"location": "Meyreuil, France",
-	"extract": "In Extenso est un groupe d'experts comptables de niveau national et membre de Deloitte. J'ai effectué un stage de 6 mois dans le service communication chez In Extenso Méditerranée.",
-	"more_details": "<p>Mes missions ont été :</p><ul><li>Analyse clientèle et prospection (analyse quantitative,...)</li><li>Assistance à la mise en place d'événements (création d'invitation, création de liste de contact,...)</li><li>Publication d'articles (Wordpress)</li><li>Création de supports de communications (affiches, présentations,...)</li><li>Mise en place d'un questionnaire</li></ul>"
-}]
+	"jobs": [
+		{
+			"link": "https://www.la-ligne-web.com/",
+			"img": "https://www.la-ligne-web.com/wp-content/uploads/2016/02/logo_llw.png",
+			"enterprise": "La ligne Web",
+			"job": "Développeur web",
+			"date": "Sept. 2017 - en cours",
+			"location": "Aix-en-Provence, France",
+			"extract": "Je suis actuellement au poste de développeur junior à La Ligne Web, Agence Web à Aix en Provence.",
+			"missions": ["Création de sites internets sous wordpress et Prestashop et déploiement", "maintenance de sites", "Rédaction Web / Référencement", "Création de manuel d'utilisations", "Mise en place d'un questionnaire"]
+		},
+		{
+			"link": "https://www.inextenso.fr/Accueil",
+			"img": "images/in_extenso_opt.png",
+			"enterprise": "In Extenso",
+			"job": "Assistant communication",
+			"date": "Févr. 2016 - Juil. 2016",
+			"location": "Meyreuil, France",
+			"extract": "In Extenso est un groupe d'experts comptables de niveau national et membre de Deloitte. J'ai effectué un stage de 6 mois dans le service communication chez In Extenso Méditerranée.",
+			"missions": ["Analyse clientèle et prospection (analyse quantitative,...)", "Assistance à la mise en place d'événements (création d'invitation, création de liste de contact,...)", "Publication d'articles (Wordpress)", "Création de supports de communications (affiches, présentations,...)", "Mise en place d'un questionnaire"]
+		}]
+}
