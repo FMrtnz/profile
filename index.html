@@ -65,6 +65,23 @@
         margin: 2rem auto;
         box-shadow: 0px 0px 1rem #000;
       }
+      .txt-grad h3{
+        margin: .3rem;
+      }
+      .txt-grad p{
+        margin: .2rem;
+        line-height: 1;
+        font-size: .9rem
+      }
+      .logo-grad,
+      .grad{
+        display: flex;
+        align-items: center;
+      }
+      .logo-grad,
+      .txt-grad{
+        padding: 1rem;
+      }
       #skills_list > div{
         display: flex;
         flex-flow: wrap;
@@ -174,20 +191,22 @@
       <amp-list layout="flex-item" height="500" width="auto" items="grads" id="grads" src="assets/json/studies.json" template="grad">
         <template type="amp-mustache" id="grad">
           <div class="grad content">
-              <a href="{{link}}">
+              <a href="{{link}}" class="logo-grad">
                 <amp-img
                 alt="{{school}}"
                 src="{{img}}"
                 width="70"
                 height="70"
                 >
-                </amp-img>
-              </a>
+              </amp-img>
+            </a>
+            <div class="txt-grad">
               <h3>{{grad}}</h3>
               <p>{{school}}</p>
               <p>{{date}}</p>
-              <p>{{extract}}</p>
-              <a href="{{link}}"> En savoir plus sur {{school}}</a>
+              <!-- <p>{{extract}}</p> -->
+              <!-- <a href="{{link}}"> En savoir plus</a> -->
+            </div>
           </div>
         </template>
       </amp-list>
