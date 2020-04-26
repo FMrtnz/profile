@@ -20,16 +20,9 @@
 				"link": "http://www.univ-amu.fr/",
 				"img": "images/logo-amu.jpg",
 				"school": "AIX-MARSEILLE Université",
-				"grad": "Licence de psychologie",
+				"grad": "Licence de psychologie & C2I",
 				"date": "2011 - 2013",
 				"more_details": "<ul><li>Psychologie Cognitive</li><li>Psychologie Clinique</li><li>Psychologie du Développement</li><li>Psychologie Social</li><li>Psychologie Différentiel</li><li>Neurologie</li></ul>"
-			},
-			{
-				"link": "http://cipe.univ-amu.fr/tice/c2i",
-				"img": "images/logo-amu.jpg",
-				"school": "AIX-MARSEILLE Université",
-				"grad": "Certificat informatique et internet (C2i) de niveau 1",
-				"date": "2012"
 			},
 			{
 				"grad": "Baccalauréat S spé mathétiques",
