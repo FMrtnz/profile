@@ -78,6 +78,7 @@
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <!-- pwa install -->
     <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
     <link rel="manifest" href="./manifest.json">
@@ -94,6 +95,7 @@
           <button on="tap:navbar.close">X</button>
           <ul>
             <li><a href="#about" on="tap:about.scrollTo">A propos de moi</a></li>
+            <li><a href="#portfolio" on="tap:experience.scrollTo">Projets</a></li>
             <li><a href="#experience" on="tap:experience.scrollTo">Expériences</a></li>
             <li><a href="#graduates" on="tap:graduates.scrollTo">Formations</a></li>
             <li><a href="#skills" on="tap:skills.scrollTo">Compétences</a></li>
@@ -106,6 +108,19 @@
           </div>
         </div>
     </header>
+    <div id="portfolio" class="section">
+      <div class="content">
+        <h2>Projets</h2>
+        <amp-carousel width="3104" height="1818" layout="responsive" type="slides" loop autoplay>
+            <amp-img alt="Le Studio" layout="responsive" height="1818" width="3104" src="portfolio/le-studio.png"></amp-img>
+            <amp-img alt="LB Search" layout="responsive" height="1818" width="3104" src="portfolio/lb-search.png"></amp-img>
+            <amp-img alt="Solinov" layout="responsive" height="1818" width="3104" src="portfolio/solinov.png"></amp-img>
+            <amp-img alt="Marseille Autrement" layout="responsive" height="1818" width="3104" src="portfolio/ma.png"></amp-img>
+            <amp-img alt="Permis Bateau Provence" layout="responsive" height="1818" width="3104" src="portfolio/permis.png"></amp-img>
+            <amp-img alt="Claire Assurance" layout="responsive" height="1818" width="3104" src="portfolio/claire-assurance.png"></amp-img>
+        </amp-carousel>
+      </div>
+    </div>
     <div id="about" class="section">
       <div class="content">
         <div class="img-profile">
