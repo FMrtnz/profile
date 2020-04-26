@@ -65,20 +65,29 @@
         margin: 2rem auto;
         box-shadow: 0px 0px 1rem #000;
       }
+      a.logo-grad{
+        width: 70px;
+        height: 70px;
+      }
+      .txt-job h3,
       .txt-grad h3{
         margin: .3rem;
       }
+      .txt-job p,
       .txt-grad p{
         margin: .2rem;
         line-height: 1;
         font-size: .9rem
       }
+      .logo,
       .logo-grad,
+      .job .title,
       .grad{
         display: flex;
         align-items: center;
       }
       .logo-grad,
+      .txt-job,
       .txt-grad{
         padding: 1rem;
       }
@@ -142,7 +151,7 @@
       <div class="content">
         <div class="img-profile">
           <amp-img
-          alt="A view of the sea"
+          alt="Avatar"
           src="/images/avatar-opt.jpg"
           width="1"
           height="1"
@@ -160,19 +169,23 @@
       <amp-list layout="flex-item" height="500" width="auto" items="jobs" id="jobs" src="assets/json/jobs.json" template="job">
         <template type="amp-mustache" id="job">
           <div class="job content">
-              <a href="{{link}}">
-                <amp-img
-                alt="{{enterprise}}"
-                src="{{img}}"
-                width="70"
-                height="70"
-                >
-                </amp-img>
-              </a>
-              <h3>{{enterprise}}</h3>
-              <p>{{job}}</p>
-              <p>{{date}}</p>
-              <p>{{location}}</p>
+              <div class="title">
+                <a href="{{link}}" class="logo">
+                  <amp-img
+                  alt="{{enterprise}}"
+                  src="{{img}}"
+                  width="70"
+                  height="70"
+                  >
+                  </amp-img>
+                </a>
+                <div class="txt-job">
+                  <h3>{{enterprise}}</h3>
+                  <p>{{job}}</p>
+                  <p>{{date}}</p>
+                  <p>{{location}}</p>
+                </div>
+              </div>
               <p>{{extract}}</p>
               <a href="{{link}}"> En savoir plus sur {{enterprise}}</a>
               <p></p>
@@ -192,6 +205,7 @@
         <template type="amp-mustache" id="grad">
           <div class="grad content">
               <a href="{{link}}" class="logo-grad">
+              {{#img}}
                 <amp-img
                 alt="{{school}}"
                 src="{{img}}"
@@ -199,6 +213,7 @@
                 height="70"
                 >
               </amp-img>
+              {{/img}}
             </a>
             <div class="txt-grad">
               <h3>{{grad}}</h3>
