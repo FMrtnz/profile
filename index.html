@@ -9,96 +9,34 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2" rel="stylesheet">
     <style amp-custom="">
-      body{
-        font-family: 'Baloo Bhaina 2', cursive;
-      }
+      body{font-family: 'Baloo Bhaina 2', cursive;}
       ul,ol{list-style: none;padding:0;line-height:1.8}
-      header .nav{
-        width: 100%;
-        position: fixed;
-        z-index: 10;
-        left: 0;
-        top: 0;
-        background-color: #ccc;
-      }
-      header .nav div{
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-      }
-      #navbar,
-      .section{
-        padding: 2rem 1rem;
-        box-shadow: inset 0px 0px .5rem #ccc;
-        line-height: 1.3;
-      }
-      header .nav div,
-      .content,
-      .section h2,
-      .footer{
-        max-width: 650px;
-        margin: auto;
-        padding: .5rem;
-        padding: .5rem;
-      }
-      .footer ul{
-        display: flex;
-        justify-content: space-around;
-        flex-flow: wrap;
-      }
-      .footer ul li{
-        flex-basis: 100%;
-        max-width: calc(600px / 3);
-        text-align: center;
-      }
-      p.mx-width{
-        margin: .8rem auto;
-        font-size: 1.2rem;
-      }
-      #about{
-        text-align: center;
-      }
-      .img-profile{
-        max-width: 200px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 2rem auto;
-        box-shadow: 0px 0px 1rem #000;
-      }
-      a.logo-grad{
-        width: 70px;
-        height: 70px;
-      }
-      .txt-job h3,
-      .txt-grad h3{
-        margin: .3rem;
-      }
-      .txt-job p,
-      .txt-grad p{
-        margin: .2rem;
-        line-height: 1;
-        font-size: .9rem
-      }
-      .logo,
-      .logo-grad,
-      .job .title,
-      .grad{
-        display: flex;
-        align-items: center;
-      }
-      .logo-grad,
-      .txt-job,
-      .txt-grad{
-        padding: 1rem;
-      }
-      #skills_list > div{
-        display: flex;
-        flex-flow: wrap;
-      }
-      .skill{
-        max-width: calc(630px / 2);
-        flex-basis: 100%;
-      }
+      header .nav{width:100%;position:fixed;z-index:10;left:0;top:0;background-color:rgba(15,15,15,.5);}
+      header .nav div{display: flex;justify-content: space-between;padding: 1rem;}
+      button{background: none;border: none;}
+      button.menu,button.lang{color:#fff;}
+      button.menu{font-size: 1.7rem;display: contents;}
+      button.lang{font-size: .85rem;}
+      #navbar,.section{padding: 2rem 1rem;box-shadow: inset 0px 0px .5rem #ccc;line-height: 1.3;}
+      #navbar > p{text-align: right;}
+      #navbar > p > button{font-size: 1.2rem;}
+      header .nav div,.content,.section h2,.footer{max-width: 650px;margin: auto;padding: .5rem;padding: .5rem;}
+      .footer ul{display: flex;justify-content: space-around;flex-flow: wrap;}
+      .footer ul li{flex-basis: 100%;max-width: calc(600px / 3);text-align: center;}
+      p.mx-width{margin: .8rem auto;font-size: 1.2rem;}
+      a{color: #161E40;text-decoration: none;position:relative;}
+      .section a:after, footer a:after{content:"";width:100%;position:absolute;height: 2px;background:#161E40;bottom:5px;left:0;  transition: all 1s ease}
+      .section a:hover:after, footer a:hover:after{width:0%;}
+      a.logo-grad:after,a.logo:after{display: none;}
+      #about{text-align: center;}
+      .img-profile{max-width: 200px;border-radius: 50%;overflow: hidden;margin: 2rem auto;box-shadow: 0px 0px 1rem #000;}
+      a.logo-grad{width: 70px;height: 70px;}
+      .txt-job h3,.txt-grad h3{margin: .3rem;}
+      .txt-job p,.txt-grad p{margin: .2rem;line-height: 1;font-size: .9rem;}
+      .logo,.logo-grad,.job .title,.grad{display: flex;align-items: center;}
+      .logo-grad,.txt-job,.txt-grad{padding: 1rem;}
+      #skills_list > div{display: flex;flex-flow: wrap;}
+      .skill{max-width: calc(630px / 2);flex-basis: 100%;}
     </style>
     <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
@@ -118,7 +56,7 @@
   <body>
     <header>
         <amp-sidebar id="navbar" class="sample-sidebar" layout="nodisplay" side="left">
-          <button on="tap:navbar.close">X</button>
+          <p><button on="tap:navbar.close">X</button></p>
           <ul>
             <li><a href="#about" on="tap:about.scrollTo">A propos de moi</a></li>
             <li><a href="#portfolio" on="tap:experience.scrollTo">Projets</a></li>
@@ -129,24 +67,11 @@
         </amp-sidebar>
         <div class="nav">
           <div>
-            <button on="tap:navbar.toggle">&#9776;</button>
-            <button>FR</button>
+            <button class="menu" on="tap:navbar.toggle">&#9776;</button>
+            <button class="lang">FR</button>
           </div>
         </div>
     </header>
-    <div id="portfolio" class="section">
-      <div class="content">
-        <h2>Projets</h2>
-        <amp-carousel width="3104" height="1818" layout="responsive" type="slides" loop autoplay>
-            <amp-img alt="Le Studio" layout="responsive" height="1818" width="3104" src="portfolio/le-studio.png"></amp-img>
-            <amp-img alt="LB Search" layout="responsive" height="1818" width="3104" src="portfolio/lb-search.png"></amp-img>
-            <amp-img alt="Solinov" layout="responsive" height="1818" width="3104" src="portfolio/solinov.png"></amp-img>
-            <amp-img alt="Marseille Autrement" layout="responsive" height="1818" width="3104" src="portfolio/ma.png"></amp-img>
-            <amp-img alt="Permis Bateau Provence" layout="responsive" height="1818" width="3104" src="portfolio/permis.png"></amp-img>
-            <amp-img alt="Claire Assurance" layout="responsive" height="1818" width="3104" src="portfolio/claire-assurance.png"></amp-img>
-        </amp-carousel>
-      </div>
-    </div>
     <div id="about" class="section">
       <div class="content">
         <div class="img-profile">
@@ -163,6 +88,19 @@
         <p><strong>Fabien Martinez</strong></p>
         <p class="mx-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum mauris eu orci ultricies commodo ac a ipsum. Suspendisse potenti. Nam ut nisl diam. Curabitur felis enim, ultrices sit amet magna nec, tempus tincidunt purus. Nulla luctus lectus magna, vitae egestas massa volutpat at. Sed nec vulputate libero.</p>
       </div>
+    </div>
+    <div id="portfolio" class="section">
+      <div class="content">
+        <h2>Projets</h2>
+      </div>
+        <amp-carousel width="1800" height="600" layout="responsive" type="slides" loop autoplay>
+            <amp-img alt="Le Studio" layout="responsive" height="1818" width="3104" src="portfolio/le-studio.png"></amp-img>
+            <amp-img alt="LB Search" layout="responsive" height="1818" width="3104" src="portfolio/lb-search.png"></amp-img>
+            <amp-img alt="Solinov" layout="responsive" height="1818" width="3104" src="portfolio/solinov.png"></amp-img>
+            <amp-img alt="Marseille Autrement" layout="responsive" height="1818" width="3104" src="portfolio/ma.png"></amp-img>
+            <amp-img alt="Permis Bateau Provence" layout="responsive" height="1818" width="3104" src="portfolio/permis.png"></amp-img>
+            <amp-img alt="Claire Assurance" layout="responsive" height="1818" width="3104" src="portfolio/claire-assurance.png"></amp-img>
+        </amp-carousel>
     </div>
     <div id="experience" class=section>
       <h2>Éxperiences</h2>
@@ -187,7 +125,7 @@
                 </div>
               </div>
               <p>{{extract}}</p>
-              <a href="{{link}}"> En savoir plus sur {{enterprise}}</a>
+              <a href="{{link}}"> En savoir +</a>
               <p></p>
               {{more_details}}
               <ul>
@@ -219,8 +157,9 @@
               <h3>{{grad}}</h3>
               <p>{{school}}</p>
               <p>{{date}}</p>
-              <!-- <p>{{extract}}</p> -->
-              <!-- <a href="{{link}}"> En savoir plus</a> -->
+              {{#link}}
+              <a href="{{link}}"> En savoir +</a>
+              {{/link}}
             </div>
           </div>
         </template>
