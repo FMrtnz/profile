@@ -24,8 +24,10 @@
       .footer ul{display: flex;justify-content: space-around;flex-flow: wrap;}
       .footer ul li{flex-basis: 100%;max-width: calc(600px / 3);text-align: center;}
       p.mx-width{margin: .8rem auto;font-size: 1.2rem;}
-      a{color: #161E40;text-decoration: none;}
-      a{}
+      a{color: #161E40;text-decoration: none;position:relative;}
+      .section a:after, footer a:after{content:"";width:100%;position:absolute;height: 2px;background:#161E40;bottom:5px;left:0;  transition: all 1s ease}
+      .section a:hover:after, footer a:hover:after{width:0%;}
+      a.logo-grad:after,a.logo:after{display: none;}
       #about{text-align: center;}
       .img-profile{max-width: 200px;border-radius: 50%;overflow: hidden;margin: 2rem auto;box-shadow: 0px 0px 1rem #000;}
       a.logo-grad{width: 70px;height: 70px;}
@@ -123,7 +125,7 @@
                 </div>
               </div>
               <p>{{extract}}</p>
-              <a href="{{link}}"> En savoir plus sur {{enterprise}}</a>
+              <a href="{{link}}"> En savoir +</a>
               <p></p>
               {{more_details}}
               <ul>
@@ -155,8 +157,9 @@
               <h3>{{grad}}</h3>
               <p>{{school}}</p>
               <p>{{date}}</p>
-              <!-- <p>{{extract}}</p> -->
-              <!-- <a href="{{link}}"> En savoir plus</a> -->
+              {{#link}}
+              <a href="{{link}}"> En savoir +</a>
+              {{/link}}
             </div>
           </div>
         </template>
