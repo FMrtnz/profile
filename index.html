@@ -40,6 +40,9 @@
       #skills_list > div{display: flex;flex-flow: wrap;}
       .skill{max-width: calc(630px / 2);flex-basis: 100%;}
       #carousel-projets{max-width: 1000px; margin: auto;}
+      .level{width: 150px;padding:.3rem;border: 1px solid #e6e6e6;margin-bottom: .5rem}
+      .bar{background-color:#000;height:12px;width: 100%;color: #fff;font-size:11px; padding: 1px 5px; line-height: 14px;font-weight: bold;}
+      .level,.bar{border-radius: 30px}
       .collapsible-captions {
         --caption-height: 40px;
         --image-height: 300px;
@@ -306,7 +309,14 @@
                 <h3>{{main}}</h3>
                 <ul>
                   {{#skills}}
-                  <li>{{.}}</li>
+                  <li>
+                    {{name}}
+                    <div class="level">
+                      <div class="bar" style="max-width: {{level}}%">
+                        {{level}} %
+                      </div>
+                    </div>
+                  </li>
                   {{/skills}}
                 </ul>
             </div>
