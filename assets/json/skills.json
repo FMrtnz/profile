@@ -6,7 +6,8 @@
 				{"name":"Ruby & Ruby on Rails", "level": 80},
 				{"name":"PHP", "level": 75},
 				{"name":"Wordpress", "level": 80},
-				{"name":"Prestashop", "level": 65}
+				{"name":"Prestashop", "level": 65},
+				{"name":"SQL", "level": 40}
 			]
 		},
 		{
