@@ -8,6 +8,7 @@
     <title>CV Fabien Martinez</title>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2" rel="stylesheet">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <style amp-custom="">
       body{font-family: 'Baloo Bhaina 2', cursive;}
       ul,ol{list-style: none;padding:0;line-height:1.8}
@@ -22,15 +23,18 @@
       #navbar > p > button{font-size: 1.2rem;}
       header .nav div,.content,.section h2,.footer{max-width: 650px;margin: auto;padding: .5rem;padding: .5rem;}
       .footer ul{display: flex;justify-content: space-around;flex-flow: wrap;}
-      .footer ul li{flex-basis: 100%;max-width: calc(600px / 3);text-align: center;}
+      .footer ul li{max-width: max-content;text-align: center;flex-basis: 100%}
+      /* .footer ul li:not(:first-child){max-width: calc(600px / 4);}
+      .footer ul li:first-child{max-width: calc(600px / 2);} */
       p.mx-width{margin: .8rem auto;font-size: 1.2rem;}
       a{color: #161E40;text-decoration: none;position:relative;}
       #navbar a:after,footer a:after,.section a:after{content:"";position:absolute;height: 2px;background:#161E40;bottom:5px;left:0;  transition: all 1s ease}
-      #navbar a:after,.section a:hover:after,footer a:after{width:0%;}
-      #navbar a:hover:after,.section a:after,footer a:hover:after{width:100%;}
+      #navbar a:after,.section a:hover:after,div.contact > a:after,footer a:after{width:0%;}
+      #navbar a:hover:after,.section a:after,div.contact > a:hover:after,footer a:hover:after{width:100%;}
       #navbar a{margin: 1rem;}
       a.logo-grad:after,a.logo:after{display: none;}
       #about{text-align: center;}
+      #about .info .contact > a{margin: 1rem;}
       .img-profile{max-width: 200px;border-radius: 50%;overflow: hidden;margin: 2rem auto;box-shadow: 0px 0px 1rem #000;}
       a.logo-grad{width: 70px;height: 70px;}
       .name{font-size: 1.8rem;}
@@ -145,7 +149,7 @@
   <body>
     <header>
         <amp-sidebar id="navbar" class="sample-sidebar" layout="nodisplay" side="left">
-          <p><button on="tap:navbar.close">X</button></p>
+          <p><button on="tap:navbar.close"><i class="fa fa-times-circle"></i></button></p>
           <ul>
             <li><a href="#about" on="tap:about.scrollTo">A propos de moi</a></li>
             <li><a href="#portfolio" on="tap:experience.scrollTo">Projets</a></li>
@@ -180,6 +184,33 @@
           Je suis actuellement au poste de Développeur intégrateur à La Ligne Web.
           Je vous invite à découvrir ma page et de ne pas hésiter à prendre contact pour plus d'informations.
         </p>
+      </div>
+        <div class="info">
+          <div class="contact">
+            <a href="mailto:fab.mrtnz22@gmail.com" >
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-paper-plane"></i>
+              </span>
+              <span>fab.mrtnz22@gmail.com</span>
+            </a>
+            <a href="tel:+33666666666" >
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-phone"></i>
+              </span>
+              <span>+33 6.66.66.66.66</span>
+            </a>
+            <a href="https://www.linkedin.com/in/fabien-martinez-a30561109/" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+              </span>
+            </a>
+            <a href="https://github.com/FMrtnz" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-github fa-stack-1x"></i>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div id="portfolio" class="section">
@@ -336,28 +367,31 @@
           <li>
             <a href="mailto:fab.mrtnz22@gmail.com" >
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-paper-plane"></i>
               </span>
               <span>fab.mrtnz22@gmail.com</span>
             </a>
           </li>
           <li>
+            <a href="tel:+33666666666" >
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-phone"></i>
+              </span>
+              <span>+33 6.66.66.66.66</span>
+            </a>
+          </li>
+          <li>
             <a href="https://www.linkedin.com/in/fabien-martinez-a30561109/" target="_blank">
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-linkedin"></i>
               </span>
-              <span>Linkedin</span>
             </a>
           </li>
           <li>
             <a href="https://github.com/FMrtnz" target="_blank">
               <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-github"></i>
               </span>
-              <span>Github</span>
             </a>
           </li>
         </ul>
