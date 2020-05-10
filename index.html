@@ -24,17 +24,16 @@
       header .nav div,.content,.section h2,.footer{max-width: 650px;margin: auto;padding: .5rem;padding: .5rem;}
       .footer ul{display: flex;justify-content: space-around;flex-flow: wrap;}
       .footer ul li{max-width: max-content;text-align: center;flex-basis: 100%}
-      /* .footer ul li:not(:first-child){max-width: calc(600px / 4);}
-      .footer ul li:first-child{max-width: calc(600px / 2);} */
       p.mx-width{margin: .8rem auto;font-size: 1.2rem;}
       a{color: #161E40;text-decoration: none;position:relative;}
       #navbar a:after,footer a:after,.section a:after{content:"";position:absolute;height: 2px;background:#161E40;bottom:5px;left:0;  transition: all 1s ease}
       #navbar a:after,.section a:hover:after,div.contact > a:after,footer a:after{width:0%;}
       #navbar a:hover:after,.section a:after,div.contact > a:hover:after,footer a:hover:after{width:100%;}
       #navbar a{margin: 1rem;}
+      div.contact > a,footer a{white-space: nowrap;}
       a.logo-grad:after,a.logo:after{display: none;}
       #about{text-align: center;}
-      #about .info .contact > a{margin: 1rem;}
+      #about .info .contact > a{margin: 0 1rem;}
       .img-profile{max-width: 200px;border-radius: 50%;overflow: hidden;margin: 2rem auto;box-shadow: 0px 0px 1rem #000;}
       a.logo-grad{width: 70px;height: 70px;}
       .name{font-size: 1.8rem;}
@@ -122,6 +121,9 @@
       }
       .collapsible-captions figcaption.expanded span{
         transform: rotate(-90deg);
+      }
+      @media screen and (max-width: 480px) {
+        .footer .fas, #about .contact{display: flex;flex-wrap: wrap;justify-content: center;max-width: 205px;margin: auto;}
       }
     </style>
     <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
