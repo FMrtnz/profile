@@ -1,0 +1,21 @@
+{
+  "bookendVersion": "v1.0",
+  "shareProviders": [
+    "linkedin",
+    "email",
+    "facebook",
+    "twitter"
+  ],
+  "components": [
+    {
+      "type": "heading",
+      "text": ""
+    },
+    {
+      "type": "small",
+      "title": "Mon CV",
+      "url": "index.html",
+      "image": "./images/avatar-opt.jpg"
+    }
+  ]
+}
