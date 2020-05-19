@@ -10,9 +10,15 @@
     <link rel="canonical" href="https://amp.dev/documentation/examples/style-layout/amp_story_layouts/index.html">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <style amp-custom>
       body {
         font-family: 'Baloo Bhaina 2', cursive;
+        color: #fff;
+      }
+      p{
+        text-shadow: 1px 1px 2px #000;
+        font-size: 1.3rem;
       }
       amp-story-page {
         background: white;
@@ -24,7 +30,17 @@
         color: white;
         padding: 8px;
       }
-      </style>
+      a.btn div{border: 1px solid currentColor; padding: .6rem 1rem; width: max-content; margin: 1rem auto; border-radius: 30px; position: relative; overflow: hidden;}
+      a.btn div span{font-weight: bold;}
+      a.btn div:hover:before{width: 100%}
+      ul.fas{display: flex;justify-content: space-around;flex-flow: wrap; list-style: none;list-style: none;padding: 0 1rem;}
+      ul.fas li{max-width: max-content;text-align: center;flex-basis: 100%;}
+      ul.fas li a span{border-radius: 50%; display: flex;justify-content: center;align-items: center;font-size: 1.6rem;padding: .8rem;}
+      a.btn, ul.fas li a{text-decoration: none;}
+      a.btn div, ul.fas li a span{background-color: #e6e6e6;color: rgba(20,20,20,.7); transition: .4s all ease}
+      a.btn:hover div, ul.fas li a:hover span{transform: scale(1.3);}
+      div.bottom{display: flex;justify-content: flex-end;flex-direction: column;}
+    </style>
   </head>
 
   <body>
@@ -44,6 +60,17 @@
             layout="responsive">
           </amp-img>
         </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds">
+          <div grid-area="upper-third"
+            animate-in="fly-in-right"
+            animate-in-delay="0.3s">
+            <p>De nature curieux je cherche à découvrir des nouveaux lieux et d'apprendre de nouvelles choses</p>
+          </div>
+          <div grid-area="lower-third"
+            animate-in="fly-in-left"
+            animate-in-delay="0.6s">
+          </div>
+        </amp-story-grid-layer>
       </amp-story-page>
       <amp-story-page id="page-2">
         <amp-story-grid-layer template="fill">
@@ -52,6 +79,18 @@
             height="1280"
             layout="responsive">
           </amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="fill">
+          <div style="background: rgba(0,0,0, .5); width: 100%; height:100%;">
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="horizontal">
+          <p>
+            Passionné d'activités outdoor et de l'apprentissage des langues.
+            J'aime aller de l'avant et apprécier chaque progrès aussi bien d'avancer
+            un pas vers le sommet, apprendre un nouveau mot par semaine ou de rencontrer de nouveaux horizons.
+          </p>
+          <p></p>
         </amp-story-grid-layer>
       </amp-story-page>
       <amp-story-page id="page-3">
@@ -62,10 +101,61 @@
             layout="responsive">
           </amp-img>
         </amp-story-grid-layer>
+        <amp-story-grid-layer template="fill">
+          <div style="background: rgba(0,0,0, .5); width: 100%; height:100%;">
+          </div>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds">
+          <div grid-area="upper-third"
+            animate-in="fly-in-left"
+            animate-in-delay="0.4s">
+            <p>Après avoir pris connaissance de ma story, j'espère pouvoir partager avec vous une autre aventure et en sortir plus grand.</p>
+          </div>
+          <div grid-area="lower-third"
+            animate-in="fly-in-left"
+            animate-in-delay="0.6s"
+            class="bottom">
+            <ul class="fas">
+              <li>
+                <a href="mailto:fab.mrtnz22@gmail.com" >
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-paper-plane"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+33666666666" >
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-phone"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/fabien-martinez-a30561109/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-linkedin"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/FMrtnz" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-github"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <a href="index.html"  class="btn">
+              <div>
+                EN SAVOIR +
+              </div>
+            </a>
+          </div>
+        </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-bookend src="./stories/bookend.json" layout="nodisplay">
-      </amp-story-bookend>
+      <!-- <amp-story-bookend src="./stories/bookend.json" layout="nodisplay">
+      </amp-story-bookend> -->
 
     </amp-story>
   </body>
