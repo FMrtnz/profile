@@ -1,0 +1,22 @@
+{
+	"contacts": [
+			{
+				"link": "mailto:fab.mrtnz22@gmail.com",
+				"picto": "fa-paper-plane",
+				"name": "fab.mrtnz22@gmail.com"
+			},
+			{
+				"link": "tel:+33666666666",
+				"picto": "fa-phone",
+				"name": "+33 6.66.66.66.66"
+			},
+			{
+				"link": "https://www.linkedin.com/in/fabien-martinez-a30561109/",
+				"picto": "fa-linkedin"
+			},
+			{
+				"link": "https://github.com/FMrtnz",
+				"picto": "fa-github"
+			}
+		]
+}

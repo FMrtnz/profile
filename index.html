@@ -22,14 +22,14 @@
       #navbar > p{text-align: right;}
       #navbar > p > button{font-size: 1.2rem;}
       header .nav div,.content,.section h2,.footer{max-width: 650px;margin: auto;padding: .5rem;padding: .5rem;}
-      .footer ul{display: flex;justify-content: space-around;flex-flow: wrap;}
+      .footer ul > #contacts > div{display: flex;justify-content: space-around;flex-flow: wrap;}
       .footer ul li{max-width: max-content;text-align: center;flex-basis: 100%}
       p.mx-width{margin: .8rem auto;font-size: 1.2rem;}
       a{color: #161E40;text-decoration: none;position:relative;}
       #navbar a:after,footer a:after,.section a:not(.btn):after{content:"";position:absolute;height: 2px;background:#161E40;bottom:5px;left:0;  transition: all 1s ease}
-      #navbar a:after,.section a:hover:after,div.contact > a:after,footer a:after{width:0%;}
-      #navbar a:hover:after,.section a:after,div.contact > a:hover:after,footer a:hover:after{width:100%;}
-      #navbar a:hover:after,div.contact > a:hover:after,footer a:hover:after{background: #14ffec;}
+      #navbar a:after,.section a:hover:after,.section a.link_contact:after,footer a:after{width:0%;}
+      #navbar a:hover:after,.section a:after,.section a.link_contact:hover:after,footer a:hover:after{width:100%;}
+      #navbar a:hover:after,.section a.link_contact:hover:after,footer a:hover:after{background: #14ffec;}
       #navbar a{margin: 1rem;}
       a.btn div{border: 1px solid currentColor; padding: .6rem 1rem; width: max-content; margin: 1rem auto; border-radius: 30px; position: relative; overflow: hidden;}
       a.btn div span{position: relative; z-index: 3; font-weight: bold;}
@@ -37,7 +37,7 @@
       a.btn div:before{content: ""; position: absolute; width: 0; top: 0; left: 0; height: 100%; background:#0d7377; z-index: 2;}
       a.btn div:hover{color: #fff; text-shadow: 0 0 5px #0d7377}
       a.btn div:hover:before{width: 100%}
-      div.contact > a,footer a{white-space: nowrap;}
+      .section a.link_contact,footer a{white-space: nowrap;}
       a.logo-grad:after,a.logo:after{display: none;}
       #about{text-align: center;}
       #about .info .contact > a{margin: 0 1rem;}
@@ -197,28 +197,16 @@
       </div>
         <div class="info">
           <div class="contact">
-            <a href="mailto:fab.mrtnz22@gmail.com" >
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-paper-plane"></i>
-              </span>
-              <span>fab.mrtnz22@gmail.com</span>
-            </a>
-            <a href="tel:+33666666666" >
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-phone"></i>
-              </span>
-              <span>+33 6.66.66.66.66</span>
-            </a>
-            <a href="https://www.linkedin.com/in/fabien-martinez-a30561109/" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-linkedin fa-stack-1x"></i>
-              </span>
-            </a>
-            <a href="https://github.com/FMrtnz" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-github fa-stack-1x"></i>
-              </span>
-            </a>
+            <amp-list layout="flex-item" height="50" width="auto" items="contacts" id="contacts_2" src="assets/json/contact.json" template="contact_2">
+              <template type="amp-mustache" id="contact_2">
+                <a href="{{link}}" target="_blank" class="link_contact">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa {{picto}}"></i>
+                  </span>
+                  <span>{{name}}</span>
+                </a>
+              </template>
+            </amp-list>
           </div>
         </div>
       </div>
@@ -374,36 +362,20 @@
     <footer>
       <div class="footer">
         <ul class="fas">
-          <li>
-            <a href="mailto:fab.mrtnz22@gmail.com" >
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-paper-plane"></i>
-              </span>
-              <span>fab.mrtnz22@gmail.com</span>
-            </a>
-          </li>
-          <li>
-            <a href="tel:+33666666666" >
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-phone"></i>
-              </span>
-              <span>+33 6.66.66.66.66</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/fabien-martinez-a30561109/" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-linkedin"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/FMrtnz" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-github"></i>
-              </span>
-            </a>
-          </li>
+          <amp-list layout="flex-item" height="50" width="auto" items="contacts" id="contacts" src="assets/json/contact.json" template="contact">
+            <template type="amp-mustache" id="contact">
+              <li>
+                <a href="{{link}}" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa {{picto}}"></i>
+                  </span>
+                  {{#name}}
+                  <span>{{name}}</span>
+                  {{/name}}
+                </a>
+              </li>
+            </template>
+          </amp-list>
         </ul>
       </div>
     </footer>
