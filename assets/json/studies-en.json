@@ -1,0 +1,44 @@
+{
+	"grads": [
+			{
+				"link": "https://supdeweb.com/marseille/",
+				"img": "https://www.digischool.fr//images/xsupdeweb.jpg.pagespeed.ic.owesTEoGce.jpg",
+				"width": 70,
+				"height": 70,
+				"school": "SUP DE WEB",
+				"grad": "Master E-commerce & digital communication",
+				"date": "2017 - 2018"
+			},
+			{
+				"link": "https://www.lewagon.com/fr",
+				"img": "images/logo-le-wagon.png",
+				"width": 70,
+				"height": 70,
+				"school": "Le Wagon Aix-Marseille",
+				"grad": "FullStack Progamme",
+				"date": "Jan 2017 - Mars 2017"
+			},
+			{
+				"link": "https://www.maestris-sup.com",
+				"img": "https://www.maestris-sup.com/wp-content/uploads/2018/06/logo-maestris-sup-site.png",
+				"width": 140,
+				"height": 51,
+				"school": "Maestris Sup Aix-en-Provence",
+				"grad": "Master Profesionnal Marketing & Communication",
+				"date": "2014 - 2016"
+			},
+			{
+				"link": "http://www.univ-amu.fr/",
+				"img": "images/logo-amu.jpg",
+				"width": 70,
+				"height": 70,
+				"school": "AIX-MARSEILLE University",
+				"grad": "Psychology licence",
+				"date": "2011 - 2013"
+			},
+			{
+				"grad": "Bachelor's degree Sciences & maths",
+				"date": "2011"
+			}
+		]
+}

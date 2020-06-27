@@ -1,0 +1,23 @@
+{
+	"jobs": [
+		{
+			"link": "https://www.la-ligne-web.com/",
+			"img": "https://www.la-ligne-web.com/wp-content/uploads/2016/02/logo_llw.png",
+			"enterprise": "La Ligne Web",
+			"job": "Web Developper",
+			"date": "Sept. 2017 - currently",
+			"location": "Aix-en-Provence, France",
+			"extract": "I am working now as Developper in La Ligne Web, Web Agency in Aix en Provence.",
+			"missions": ["Websites creation under Wordpresse & Prestashop","SEO Optimisation","Ruby On Rails developpement"]
+		},
+		{
+			"link": "https://www.inextenso.fr/Accueil",
+			"img": "images/in_extenso_opt.png",
+			"enterprise": "In Extenso",
+			"job": "Communication's assistant",
+			"date": "Feb. 2016 - Jul. 2016",
+			"location": "Meyreuil, France",
+			"extract": "In Extenso est un groupe d'experts comptables de niveau national et membre de Deloitte. J'ai effectué un stage de 6 mois dans le service communication chez In Extenso Méditerranée.",
+			"missions": ["customers & leads analyse ( data analyse,...)", "Events creations support", "Articles publications (Wordpress)", "Creation of communication's tools (posters, powerpoint,...)", "Surwey creation"]
+		}]
+}
