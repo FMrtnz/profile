@@ -22,7 +22,7 @@
       #navlang > p, #navbar > p {text-align: right;}
       #navlang > p > button, #navbar > p > button{font-size: 1.2rem;}
       header .nav div,.content,.section h2,.footer{max-width: 650px;margin: auto;padding: .5rem;padding: .5rem;}
-      .footer ul > #contacts > div{display: flex;justify-content: space-around;flex-flow: wrap;}
+      .footer ul > #contacts_2 > div, .footer ul > #contacts > div{display: flex;justify-content: space-around;flex-flow: wrap;}
       .footer ul li{max-width: max-content;text-align: center;flex-basis: 100%}
       p.mx-width{margin: .8rem auto;font-size: 1.2rem;}
       a{color: #161E40;text-decoration: none;position:relative;}
@@ -130,7 +130,9 @@
         transform: rotate(-90deg);
       }
       @media screen and (max-width: 480px) {
-        .footer .fas, #about .contact{display: flex;flex-wrap: wrap;justify-content: center;max-width: 205px;margin: auto;}
+        .footer .fas, #about .contact{display: flex;flex-wrap: wrap;justify-content: center;max-width: 210px;margin: auto;}
+        #contact > div, #contacts_2 > div{display: flex;justify-content: center;flex-flow: wrap;}
+        #contact > div > .listitem:nth-child(2), #contacts_2 > div > .link_contact:nth-child(2){flex-basis: 100%}
       }
     </style>
     <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
