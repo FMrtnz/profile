@@ -11,12 +11,14 @@
 				"name": "+33 6.60.33.15.79"
 			},
 			{
-				"link": "https://www.linkedin.com/in/fabien-martinez-a30561109/",
-				"picto": "fa-linkedin"
+				"link": "https://www.linkedin.com/in/fabien-martinez-data-analyst42/",
+				"picto": "fa-linkedin",
+				"name": "linkedin.com/in/fabien-martinez-data-analyst42"
 			},
 			{
 				"link": "https://github.com/FMrtnz",
-				"picto": "fa-github"
+				"picto": "fa-github",
+				"name": "github.com/FMrtnz"
 			}
 		]
 }

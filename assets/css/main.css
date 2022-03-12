@@ -1,27 +1,51 @@
-@import url("components/fixbar.css");
-@import url("components/footer.css");
-@import url("components/hexagon.css");
-@import url("components/box.css");
-@import url("components/experience.css");
-@import url("components/graduation.css");
-@import url("components/barre.css");
-@import url("components/form.css");
-@import url("components/banner.css");
+@import url("./components/fixbar.css");
+@import url("./components/footer.css");
+@import url("./components/box.css");
+@import url("./components/experience.css");
+@import url("./components/banner.css");
+
+:root{
+  --link-color: #008b8b;
+  --link-over-color: #00ced1;
+}
 
 * {
   font-size: 1.02em;
 }
 
-a {
-  color: #ccc;
-  /*font-size: 1.2em;*/
-  text-decoration: none;
-  /*width: 1%;*/
+h1{font-size: 2.3rem}
+h2{font-size: 2rem}
+h3{font-size: 1.9rem}
+h4{font-size: 1.7rem}
+h5{font-size: 1.5rem}
+h6{font-size: 1.3rem}
+
+p{
+  line-height: 1.4;
 }
 
-.no-padding {
-  margin-left: 0%;
-  margin-right: 0%;
-  padding-right: 0%;
-  padding-left: 0%;
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:focus, a:hover {
+  color: var(--link-over-color);
+}
+
+body{font-family: 'Baloo Bhaina 2', cursive;}
+
+div.row{max-width: 1000px;}
+
+.section{padding: 2rem 1rem;box-shadow: inset 0px 0px .5rem #ccc;line-height: 1.3;}
+.section h2,.footer{max-width: 650px;margin: auto;padding: .5rem;padding: .5rem;}
+
+
+
+@media screen and (max-width: 600px) {
+  #contact li a:focus,
+  #contact li a:hover {
+    background-color: var(--link-over-color);
+    color: white;
+    border-color: var(--link-over-color);
+  }
 }

@@ -1,97 +1,128 @@
-#navigation {
-  color: white;
-  background-color: rgba(40,40,40, 1);
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  z-index: 1030;
-  /*font-size: 12px;*/
+
+.topbar-responsive {
+  background: #2c3840;
+  padding: 1rem 1.5rem;
 }
 
-#presentation {
-  margin-top: 5%;
+.topbar-responsive .topbar-responsive-logo {
+  color: #fefefe;
+  vertical-align: middle;
 }
 
-#presentation img {
-  max-width: 60%;
-  min-width: 50%;
-  border: solid;
-  border: solid 2px #333333;
-  box-shadow: 0 0 50px rgba(0,0,0,0.9);
-  border-radius: 100%;
+.topbar-responsive .menu {
+  background: #2c3840;
 }
 
-#navigation {
-  font-size: 1em;
+.topbar-responsive .menu li:last-of-type {
+  margin-right: 0;
 }
 
-#navigation a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.90em;
+.topbar-responsive .menu a {
+  color: #fefefe;
+  transition: color 0.15s ease-in;
 }
 
-#nav ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  /*float: left;*/
+.topbar-responsive .menu a:hover {
+  color: #c6d1d8;
 }
 
-.menu a {
-  /*margin-left: -10%;*/
-  /*font-size: 50%;*/
-  display: block;
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  border: 3px solid white
-  background-size: 100%;
-  /*transition: all 0.3s ease;*/
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive .menu a {
+    padding: 0.875rem 0;
+  }
 }
 
-.menu li {
-  transition: background-color 0.5s ease
+.topbar-responsive .menu .topbar-responsive-button {
+  color: #fefefe;
+  border-color: #fefefe;
+  border-radius: 5000px;
+  transition: color 0.15s ease-in, border-color 0.15s ease-in;
 }
 
-.menu li:hover {
-  background-color: rgba(104, 223, 240, 0.7);
-  /*background-color: #68DFF0;*/
+.topbar-responsive .menu .topbar-responsive-button:hover {
+  color: #c6d1d8;
+  border-color: #c6d1d8;
 }
 
-.menu a i {
-  margin-left: 1em;
-  /*transition: all 0.3s ease;*/
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive .menu .topbar-responsive-button {
+    width: 100%;
+    margin: 0.875rem 0;
+  }
 }
 
-.menu a span {
-  margin-left: 1em;
-  /*transition: all 0.3s ease;*/
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive {
+    padding: 0.75rem;
+  }
+  .topbar-responsive .top-bar-title {
+    position: relative;
+    width: 100%;
+  }
+  .topbar-responsive .top-bar-title span {
+    position: absolute;
+    right: 0;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    padding: 0.25rem 0.45rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .topbar-responsive .top-bar-title span .menu-icon {
+    margin-bottom: 4px;
+  }
 }
 
-/*button for responsive side-bar*/
-#hamb-bar {
-  background-color: rgba(40,40,40, 0.9);
-  /*background-size: 100%;*/
-  background-padding: 100%;
-  /*position: fixed;*/
-  /*z-index: 1;*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-#close span {
-  font-size: 2.5em;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-#hamburger {
-  margin-left: 6%;
-  background-color: transparent;
-  border-color: transparent;
-  color: #ccc;
-  font-size: 2.5em;
-  transition: all 0.3s ease;
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
-#margin-fixbar {
-  margin-bottom: 12%;
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive-links {
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    width: 100%;
+    -webkit-animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in;
+  }
 }
