@@ -58,6 +58,18 @@ a.info i{
   line-height: 1;
 }
 
+#skills ul li span{text-align: left;}
+#skills ul li span,
+#skills ul li .progress{
+  flex-basis: 50%;
+  margin: 0;
+}
+
+#skills ul li .progress-meter,
+#skills ul li .progress{
+  border-radius: 25px;
+}
+
 
 .skill_content{
   margin: .5rem auto 0;
