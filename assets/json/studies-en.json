@@ -1,6 +1,15 @@
 {
 	"grads": [
 			{
+				"link": "https://media-exp1.licdn.com/dms/image/C560BAQFskcSXObhsaw/company-logo_200_200/0/1547218298050?e=2147483647&v=beta&t=M7Yt8Gdf0G3QurdDghl4i_rK_W0QtoG3nP1MJGlT5ug",
+				"img": "https://www.wildcodeschool.com/en-GB/courses/data-analysis-data-analytics-course-full-time/lisbon?locale=en-GB",
+				"width": 70,
+				"height": 70,
+				"school": "WILD CODE SCHOOL (Lisbon)",
+				"grad": "Data analyst programme",
+				"date": "Fev 2022 - July 2022"
+			},
+			{
 				"link": "https://supdeweb.com/marseille/",
 				"img": "https://www.digischool.fr//images/xsupdeweb.jpg.pagespeed.ic.owesTEoGce.jpg",
 				"width": 70,
@@ -15,12 +24,12 @@
 				"width": 70,
 				"height": 70,
 				"school": "Le Wagon Aix-Marseille",
-				"grad": "FullStack Progamme",
-				"date": "Jan 2017 - Mars 2017"
+				"grad": "FullStack Programme",
+				"date": "Jan 2017 - Mar 2017"
 			},
 			{
-				"link": "https://www.maestris-sup.com",
-				"img": "https://www.maestris-sup.com/wp-content/uploads/2018/06/logo-maestris-sup-site.png",
+				"link": "https://www.esupcom.com/formation/mastere-communication-des-marques-et-des-entreprises/",
+				"img": "https://www.esupcom.com/images/Logo_Esupcom_Carre.png",
 				"width": 140,
 				"height": 51,
 				"school": "Maestris Sup Aix-en-Provence",
@@ -33,7 +42,7 @@
 				"width": 70,
 				"height": 70,
 				"school": "AIX-MARSEILLE University",
-				"grad": "Psychology licence",
+				"grad": "Psychology bachelor",
 				"date": "2011 - 2013"
 			},
 			{

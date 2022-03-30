@@ -1,31 +1,29 @@
 {
 	"skills":[
 		{
-			"main": "Web developpement",
+			"main": "Data analyst",
 			"skills":[
-				{"name":"Ruby & Ruby on Rails", "level": 80},
-				{"name":"PHP", "level": 75},
-				{"name":"Wordpress", "level": 80},
-				{"name":"Prestashop", "level": 65},
-				{"name":"SQL", "level": 40}
-			]
-		},
-		{
-			"main": "Web design",
-			"skills":[
-				{"name":"HTML5", "level": 100},
-				{"name":"CSS3", "level": 100},
-				{"name":"Jquery & JS", "level": 70},
-				{"name":"AMP", "level": 65}
+				{"name":"SQL", "level": 85},
+				{"name":"Python", "level": 70},
+				{"name":"pandas", "level": 70},
+				{"name":"Git", "level": 75}
 			]
 		},
 		{
 			"main": "Software",
 			"skills":[
-				{"name":"Microsoft Office", "level": 70},
-				{"name":"Photoshop", "level": 60},
-				{"name":"Illustrator", "level": 40},
-				{"name":"Adobe Premiere", "level": 40}
+				{"name":"Microsoft Office", "level": 65},
+				{"name":"Google office", "level": 65},
+				{"name":"Excel & Google sheet", "level": 70},
+				{"name":"Adobe Package", "level": 40}
+			]
+		},
+		{
+			"main": "Web developpement",
+			"skills":[
+				{"name":"HTML/CSS/JS", "level": 80},
+				{"name":"Ruby On Rails", "level": 80},
+				{"name":"PHP", "level": 75}
 			]
 		},
 		{
