@@ -74,6 +74,7 @@ p.skill_area{
   .section h2{
     text-align: center;
   }
+
   .card_info .title-info,
   .card_info .image.fit{
     flex-basis: 100%;
@@ -82,5 +83,7 @@ p.skill_area{
   .card_info .image.fit{
     height: 100px
   }
-
+  .card_info a{
+    margin: auto;
+  }
 }
