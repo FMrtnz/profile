@@ -1,3 +1,7 @@
+.menu-icon::after {
+  top: 30%;
+  transform: translateY(-30%);
+}
 
 .topbar-responsive {
   background: #2c3840;
@@ -58,6 +62,7 @@
   .topbar-responsive .top-bar-title {
     position: relative;
     width: 100%;
+    margin: .5rem 1rem .8rem 0;
   }
   .topbar-responsive .top-bar-title span {
     position: absolute;
