@@ -7,8 +7,7 @@
 			"job": "Web Developper",
 			"date": "Sept. 2017 - Nov. 2021",
 			"location": "Aix-en-Provence, France",
-			"extract": "I was working as a web developper in La Ligne Web, a digital agency. My main missions are to create web sites under Prestashop and Wordpress with SEO Optimisation and AMP (Accelerate Mobile page  frameworks). I am working on projects with Ruby on Rails and Gitlab too.",
-			"missions": ["Websites creation under Wordpresse & Prestashop","SEO Optimisation","Ruby On Rails developpement"]
+			"extract": "During few years, I was working as web developer in La Ligne Web, a digital agency. My missions to websites under Prestashop and Wordpress with SEO optimisation, to analyse and to collect customers data under SQL and PhpMyAdmin and also working with Ruby On Rails framework. All our projets were managed by GitLab and on OVH's servers."
 		},
 		{
 			"link": "https://www.inextenso.fr/Accueil",
@@ -17,7 +16,6 @@
 			"job": "Communication's assistant",
 			"date": "Feb. 2016 - Jul. 2016",
 			"location": "Meyreuil, France",
-			"extract": "In Extenso is a group of national accountants, part of Deloitte. I did a 6-month internship in the communication department at In Extenso Mediterranee. My main mission was to bring a support to communication services by customers & leads analyse ( data analyse, survey...),  creaton of events supports tools and articles publications (on Wordpress).",
-			"missions": ["customers & leads analyse ( data analyse,...)", "Events creations support", "Articles publications (Wordpress)", "Creation of communication's tools (posters, powerpoint,...)", "Surwey creation"]
+			"extract":"In Extenso is a group of national accountants, part of Deloitte. I did a 6-month internship in the communication department at In Extenso Mediterranee. My work was to bring a support to communication services by customers & leads analyse (Data analyse under excels, survey, ...), creation of events supports tools and articles publications (on WordPress)."
 		}]
 }
