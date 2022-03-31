@@ -13,9 +13,6 @@
   vertical-align: middle;
 }
 
-.topbar-responsive .menu {
-  background: #2c3840;
-}
 
 .topbar-responsive .menu li:last-of-type {
   margin-right: 0;

@@ -56,6 +56,7 @@ a.info i{
   align-items: center;
   max-width: 360px;
   line-height: 1;
+  margin: 0.5rem 0 0;
 }
 
 #skills ul li span{text-align: left;}
@@ -68,6 +69,10 @@ a.info i{
 #skills ul li .progress-meter,
 #skills ul li .progress{
   border-radius: 25px;
+}
+
+#skills ul li .progress{
+  
 }
 
 
