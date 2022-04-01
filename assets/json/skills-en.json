@@ -19,7 +19,7 @@
 			]
 		},
 		{
-			"main": "Web developpement",
+			"main": "Web developement",
 			"skills":[
 				{"name":"HTML/CSS/JS", "level": 80},
 				{"name":"Ruby On Rails", "level": 80},
